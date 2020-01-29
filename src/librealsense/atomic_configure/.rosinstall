@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/michael/racecar-ws/src/librealsense/devel/setup.sh

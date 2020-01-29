@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: racecar_potential_field_controller
+Description: Description of racecar_potential_field_controller
+Version: 0.0.1
+Cflags: -I/usr/local/include -I/usr/include/eigen3
+Libs: -L/usr/local/lib 
+Requires: nodelet pluginlib dynamic_reconfigure roscpp sensor_msgs ackermann_msgs visualization_msgs

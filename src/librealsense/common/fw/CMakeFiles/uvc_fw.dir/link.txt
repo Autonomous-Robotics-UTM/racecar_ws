@@ -1,0 +1,2 @@
+/usr/bin/ar qc libuvc_fw.a  CMakeFiles/uvc_fw.dir/empty.c.o CMakeFiles/uvc_fw.dir/D4XX_FW_Image.c.o CMakeFiles/uvc_fw.dir/D4XX_RC_Image.c.o CMakeFiles/uvc_fw.dir/SR3XX_FW_Image.c.o
+/usr/bin/ranlib libuvc_fw.a

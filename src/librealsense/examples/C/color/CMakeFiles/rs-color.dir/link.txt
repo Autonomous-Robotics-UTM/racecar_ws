@@ -1,0 +1,1 @@
+/usr/bin/cc    -fPIC -pedantic -g -D_BSD_SOURCE   -mstrict-align -ftree-vectorize -pthread  -rdynamic CMakeFiles/rs-color.dir/rs-color.c.o  -o rs-color -Wl,-rpath,/home/model2/racecar-ws/src/librealsense: ../../../librealsense2.so.2.29.0 ../../../third-party/glfw/src/libglfw3.a -lGL -lGLU -lrt -lm -ldl -lX11 

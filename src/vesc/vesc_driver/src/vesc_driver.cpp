@@ -32,12 +32,10 @@ VescDriver::VescDriver(ros::NodeHandle nh,
 
   // attempt to connect to the serial port
   try {
-    //vesc_.connect(port);
-    vesc_.connect("/dev/ttyACM0");
+    vesc_.connect(port);
   }
   catch (SerialException e) {
     ROS_FATAL("Failed to connect to the VESC, %s.", e.what());
-    ROS_FATAL("Failed on port: %s", port);
     ros::shutdown();
     return;
   }

@@ -31,7 +31,6 @@ class JoyTeleop:
     See config/joy_teleop.yaml for an example.
     """
     def __init__(self):
-	print("-------------Joy teleop started------------")
         if not rospy.has_param("teleop"):
             rospy.logfatal("no configuration was found, taking node down")
             raise JoyTeleopException("no config")
@@ -76,7 +75,6 @@ class JoyTeleop:
                 if self.match_command(c, data.buttons):
                     self.run_command(c, data)
                     # Only run 1 command at a time
-		    print(c)
                     break
         except JoyTeleopException as e:
             rospy.logerr("error while parsing joystick input: %s", str(e))

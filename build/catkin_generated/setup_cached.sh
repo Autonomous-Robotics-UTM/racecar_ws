@@ -8,7 +8,7 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/model2/racecar-ws/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/model2/racecar-ws/devel/lib:/opt/ros/melodic/lib:/usr/local/lib:/usr/local/cuda-10.0/lib64"
+export LD_LIBRARY_PATH="/home/model2/racecar-ws/devel/lib:/opt/ros/melodic/lib:/usr/local/cuda-10.0/lib64"
 export PKG_CONFIG_PATH="/home/model2/racecar-ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD="/home/model2/racecar-ws/build"
 export PYTHONPATH="/home/model2/racecar-ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"

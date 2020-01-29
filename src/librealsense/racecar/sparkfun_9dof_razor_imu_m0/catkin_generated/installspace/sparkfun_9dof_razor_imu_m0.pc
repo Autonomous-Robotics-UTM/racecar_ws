@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: sparkfun_9dof_razor_imu_m0
+Description: Description of sparkfun_9dof_razor_imu_m0
+Version: 0.0.1
+Cflags: -I/usr/local/include
+Libs: -L/usr/local/lib 
+Requires: nodelet pluginlib roscpp sensor_msgs serial

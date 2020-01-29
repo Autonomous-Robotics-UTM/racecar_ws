@@ -1,7 +1,7 @@
 <!-- -*- mode: XML -*- -->
 <launch>
   <arg name="racecar_version" value="racecar-v2" />
-  <arg name="imu_model" default="$(optenv RACECAR_IMU razor_imu_m0)" doc="imu sensor types [razor_imu, razor_imu_m0]" />
+  <arg name="imu_model" default="$(optenv RACECAR_IMU razor_imu)" doc="imu sensor types [razor_imu, razor_imu_m0]" />
   <arg name="run_camera" default="false"/>
 
   <!-- vehicle geometry parameters, footprint, and static transforms -->
@@ -14,9 +14,9 @@
     <arg name="racecar_version" value="$(arg racecar_version)" />
   </include>
 
-  <!-- default (zero) ackermann command -->
+  <!-- default (zero) ackermann command 
   <node name="zero_ackermann_cmd" pkg="rostopic" type="rostopic" args="pub -r 4 ackermann_cmd_mux/input/default ackermann_msgs/AckermannDriveStamped '{header: auto, drive: {steering_angle: 0.0, speed: 0.0} }'" />
-
+-->
   <!-- priority-based command multiplexer -->
   <include file="$(find ackermann_cmd_mux)/launch/standalone.launch">
     <arg name="nodelet_manager_name" value="ackermann_cmd_mux_nodelet_manager" />

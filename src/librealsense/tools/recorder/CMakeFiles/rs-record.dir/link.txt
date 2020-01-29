@@ -1,0 +1,1 @@
+/usr/bin/c++   -fPIC -pedantic -g -Wno-missing-field-initializers -Wno-switch -Wno-multichar -Wsequence-point -Wformat -Wformat-security -mstrict-align -ftree-vectorize -pthread  -rdynamic CMakeFiles/rs-record.dir/rs-record.cpp.o  -o rs-record -Wl,-rpath,/home/model2/racecar-ws/src/librealsense: ../../librealsense2.so.2.29.0 

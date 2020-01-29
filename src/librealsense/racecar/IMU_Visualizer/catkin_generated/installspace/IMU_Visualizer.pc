@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: IMU_Visualizer
+Description: Description of IMU_Visualizer
+Version: 0.0.0
+Cflags: 
+Libs: -L/usr/local/lib 
+Requires: 

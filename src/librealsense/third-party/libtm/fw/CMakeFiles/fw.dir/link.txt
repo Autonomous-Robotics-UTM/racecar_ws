@@ -1,0 +1,2 @@
+/usr/bin/ar qc libfw.a  CMakeFiles/fw.dir/empty.c.o CMakeFiles/fw.dir/fw_target.c.o CMakeFiles/fw.dir/fw_central_app.c.o CMakeFiles/fw.dir/fw_central_bl.c.o
+/usr/bin/ranlib libfw.a

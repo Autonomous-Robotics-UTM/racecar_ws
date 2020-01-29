@@ -1,0 +1,1 @@
+/usr/bin/c++   -fPIC -pedantic -g -Wno-missing-field-initializers -Wno-switch -Wno-multichar -Wsequence-point -Wformat -Wformat-security -mstrict-align -ftree-vectorize -pthread  -rdynamic CMakeFiles/rs-fw-update.dir/rs-fw-update.cpp.o  -o rs-fw-update -Wl,-rpath,/home/model2/racecar-ws/src/librealsense: ../../librealsense2.so.2.29.0 

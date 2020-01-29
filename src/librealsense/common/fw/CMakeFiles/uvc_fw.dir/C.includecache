@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/model2/racecar-ws/src/librealsense/common/fw/D4XX_FW_Image.c
+
+/home/model2/racecar-ws/src/librealsense/common/fw/D4XX_RC_Image.c
+
+/home/model2/racecar-ws/src/librealsense/common/fw/SR3XX_FW_Image.c
+
+/home/model2/racecar-ws/src/librealsense/common/fw/empty.c
+
