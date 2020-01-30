@@ -7,10 +7,10 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/model2/racecar-ws/devel:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/home/model2/racecar-ws/devel/lib:/opt/ros/melodic/lib:/usr/local/cuda-10.0/lib64"
-export PKG_CONFIG_PATH="/home/model2/racecar-ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
-export PWD="/home/model2/racecar-ws/build"
-export PYTHONPATH="/home/model2/racecar-ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/model2/racecar-ws/devel/share/common-lisp"
-export ROS_PACKAGE_PATH="/home/model2/racecar-ws/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/model3/new/racecar_ws/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/model3/new/racecar_ws/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/model3/new/racecar_ws/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD="/home/model3/new/racecar_ws/build"
+export PYTHONPATH="/home/model3/new/racecar_ws/devel/lib/python2.7/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/model3/new/racecar_ws/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/model2/racecar-ws/src:/home/model3/new/racecar_ws/src:$ROS_PACKAGE_PATH"

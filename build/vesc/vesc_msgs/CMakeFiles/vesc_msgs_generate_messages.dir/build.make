@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/model2/racecar-ws/src
+CMAKE_SOURCE_DIR = /home/model3/new/racecar_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/model2/racecar-ws/build
+CMAKE_BINARY_DIR = /home/model3/new/racecar_ws/build
 
 # Utility rule file for vesc_msgs_generate_messages.
 
@@ -63,10 +63,10 @@ vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages.dir/build: vesc_msgs_gener
 .PHONY : vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages.dir/build
 
 vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages.dir/clean:
-	cd /home/model2/racecar-ws/build/vesc/vesc_msgs && $(CMAKE_COMMAND) -P CMakeFiles/vesc_msgs_generate_messages.dir/cmake_clean.cmake
+	cd /home/model3/new/racecar_ws/build/vesc/vesc_msgs && $(CMAKE_COMMAND) -P CMakeFiles/vesc_msgs_generate_messages.dir/cmake_clean.cmake
 .PHONY : vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages.dir/clean
 
 vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages.dir/depend:
-	cd /home/model2/racecar-ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/model2/racecar-ws/src /home/model2/racecar-ws/src/vesc/vesc_msgs /home/model2/racecar-ws/build /home/model2/racecar-ws/build/vesc/vesc_msgs /home/model2/racecar-ws/build/vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/model3/new/racecar_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/model3/new/racecar_ws/src /home/model3/new/racecar_ws/src/vesc/vesc_msgs /home/model3/new/racecar_ws/build /home/model3/new/racecar_ws/build/vesc/vesc_msgs /home/model3/new/racecar_ws/build/vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : vesc/vesc_msgs/CMakeFiles/vesc_msgs_generate_messages.dir/depend
 

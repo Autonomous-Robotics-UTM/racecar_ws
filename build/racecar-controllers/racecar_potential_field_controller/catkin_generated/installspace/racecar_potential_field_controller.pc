@@ -1,4 +1,4 @@
-prefix=/home/model2/racecar-ws/install
+prefix=/home/model3/new/racecar_ws/install
 
 Name: racecar_potential_field_controller
 Description: Description of racecar_potential_field_controller

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/ackermann_cmd_mux_nodelet.dir/src/ackermann_cmd_mux_nodelet.cpp.o"
   "CMakeFiles/ackermann_cmd_mux_nodelet.dir/src/ackermann_cmd_subscribers.cpp.o"
-  "/home/model2/racecar-ws/devel/lib/libackermann_cmd_mux_nodelet.pdb"
-  "/home/model2/racecar-ws/devel/lib/libackermann_cmd_mux_nodelet.so"
+  "/home/model3/new/racecar_ws/devel/lib/libackermann_cmd_mux_nodelet.pdb"
+  "/home/model3/new/racecar_ws/devel/lib/libackermann_cmd_mux_nodelet.so"
 )
 
 # Per-language clean rules from dependency scanning.

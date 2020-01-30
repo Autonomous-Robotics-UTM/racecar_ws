@@ -1,4 +1,4 @@
-prefix=/home/model2/racecar-ws/install
+prefix=/home/model3/new/racecar_ws/install
 
 Name: realsense2_camera
 Description: Description of realsense2_camera

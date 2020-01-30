@@ -1,8 +1,8 @@
-prefix=/home/model2/racecar-ws/devel
+prefix=/home/model3/new/racecar_ws/devel
 
 Name: racecar_potential_field_controller
 Description: Description of racecar_potential_field_controller
 Version: 0.0.1
-Cflags: -I/home/model2/racecar-ws/devel/include -I/home/model2/racecar-ws/src/racecar-controllers/racecar_potential_field_controller/include -I/usr/include/eigen3
+Cflags: -I/home/model3/new/racecar_ws/devel/include -I/home/model3/new/racecar_ws/src/racecar-controllers/racecar_potential_field_controller/include -I/usr/include/eigen3
 Libs: -L${prefix}/lib 
 Requires: nodelet pluginlib dynamic_reconfigure roscpp sensor_msgs ackermann_msgs visualization_msgs

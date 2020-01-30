@@ -1,4 +1,4 @@
-prefix=/home/model2/racecar-ws/install
+prefix=/home/model3/new/racecar_ws/install
 
 Name: razor_imu_9dof
 Description: Description of razor_imu_9dof

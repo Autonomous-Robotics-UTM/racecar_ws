@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/model2/racecar-ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/model3/new/racecar_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/model2/racecar-ws/build/gtest/googlemock/cmake_install.cmake")
+  include("/home/model3/new/racecar_ws/build/gtest/googlemock/cmake_install.cmake")
 
 endif()
 

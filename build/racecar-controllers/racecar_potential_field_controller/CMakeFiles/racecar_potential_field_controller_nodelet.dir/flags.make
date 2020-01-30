@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"racecar_potential_field_controller\" -Dracecar_potential_field_controller_nodelet_EXPORTS
 
-CXX_INCLUDES = -I/home/model2/racecar-ws/devel/include -I/home/model2/racecar-ws/src/racecar-controllers/racecar_potential_field_controller/include -I/usr/include/eigen3 -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/model3/new/racecar_ws/devel/include -I/home/model3/new/racecar_ws/src/racecar-controllers/racecar_potential_field_controller/include -I/usr/include/eigen3 -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 

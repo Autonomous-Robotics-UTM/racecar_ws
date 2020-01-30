@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/vesc_msgs_generate_messages_lisp"
-  "/home/model2/racecar-ws/devel/share/common-lisp/ros/vesc_msgs/msg/VescStateStamped.lisp"
-  "/home/model2/racecar-ws/devel/share/common-lisp/ros/vesc_msgs/msg/VescState.lisp"
+  "/home/model3/new/racecar_ws/devel/share/common-lisp/ros/vesc_msgs/msg/VescState.lisp"
+  "/home/model3/new/racecar_ws/devel/share/common-lisp/ros/vesc_msgs/msg/VescStateStamped.lisp"
 )
 
 # Per-language clean rules from dependency scanning.

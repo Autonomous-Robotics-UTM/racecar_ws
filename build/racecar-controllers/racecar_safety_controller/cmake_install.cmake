@@ -1,8 +1,8 @@
-# Install script for directory: /home/model2/racecar-ws/src/racecar-controllers/racecar_safety_controller
+# Install script for directory: /home/model3/new/racecar_ws/src/racecar-controllers/racecar_safety_controller
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/model2/racecar-ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/model3/new/racecar_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,21 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/model2/racecar-ws/build/racecar-controllers/racecar_safety_controller/catkin_generated/installspace/racecar_safety_controller.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/model3/new/racecar_ws/build/racecar-controllers/racecar_safety_controller/catkin_generated/installspace/racecar_safety_controller.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/racecar_safety_controller/cmake" TYPE FILE FILES
-    "/home/model2/racecar-ws/build/racecar-controllers/racecar_safety_controller/catkin_generated/installspace/racecar_safety_controllerConfig.cmake"
-    "/home/model2/racecar-ws/build/racecar-controllers/racecar_safety_controller/catkin_generated/installspace/racecar_safety_controllerConfig-version.cmake"
+    "/home/model3/new/racecar_ws/build/racecar-controllers/racecar_safety_controller/catkin_generated/installspace/racecar_safety_controllerConfig.cmake"
+    "/home/model3/new/racecar_ws/build/racecar-controllers/racecar_safety_controller/catkin_generated/installspace/racecar_safety_controllerConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/racecar_safety_controller" TYPE FILE FILES "/home/model2/racecar-ws/src/racecar-controllers/racecar_safety_controller/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/racecar_safety_controller" TYPE FILE FILES "/home/model3/new/racecar_ws/src/racecar-controllers/racecar_safety_controller/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/racecar_safety_controller" TYPE PROGRAM FILES "/home/model2/racecar-ws/src/racecar-controllers/racecar_safety_controller/scripts/safety_controller_node.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/racecar_safety_controller" TYPE PROGRAM FILES "/home/model3/new/racecar_ws/src/racecar-controllers/racecar_safety_controller/scripts/safety_controller_node.py")
 endif()
 

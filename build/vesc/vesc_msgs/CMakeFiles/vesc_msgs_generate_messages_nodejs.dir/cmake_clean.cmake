@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/vesc_msgs_generate_messages_nodejs"
-  "/home/model2/racecar-ws/devel/share/gennodejs/ros/vesc_msgs/msg/VescStateStamped.js"
-  "/home/model2/racecar-ws/devel/share/gennodejs/ros/vesc_msgs/msg/VescState.js"
+  "/home/model3/new/racecar_ws/devel/share/gennodejs/ros/vesc_msgs/msg/VescState.js"
+  "/home/model3/new/racecar_ws/devel/share/gennodejs/ros/vesc_msgs/msg/VescStateStamped.js"
 )
 
 # Per-language clean rules from dependency scanning.

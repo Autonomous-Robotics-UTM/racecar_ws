@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "dynamic_reconfigure".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "razor_imu_9dof"
-PROJECT_SPACE_DIR = "/home/model2/racecar-ws/install"
+PROJECT_SPACE_DIR = "/home/model3/new/racecar_ws/install"
 PROJECT_VERSION = "1.2.0"

@@ -1,8 +1,8 @@
-# Install script for directory: /home/model2/racecar-ws/src/vesc/vesc_msgs
+# Install script for directory: /home/model3/new/racecar_ws/src/vesc/vesc_msgs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/model2/racecar-ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/model3/new/racecar_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,55 +39,55 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vesc_msgs/msg" TYPE FILE FILES
-    "/home/model2/racecar-ws/src/vesc/vesc_msgs/msg/VescState.msg"
-    "/home/model2/racecar-ws/src/vesc/vesc_msgs/msg/VescStateStamped.msg"
+    "/home/model3/new/racecar_ws/src/vesc/vesc_msgs/msg/VescState.msg"
+    "/home/model3/new/racecar_ws/src/vesc/vesc_msgs/msg/VescStateStamped.msg"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vesc_msgs/cmake" TYPE FILE FILES "/home/model2/racecar-ws/build/vesc/vesc_msgs/catkin_generated/installspace/vesc_msgs-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vesc_msgs/cmake" TYPE FILE FILES "/home/model3/new/racecar_ws/build/vesc/vesc_msgs/catkin_generated/installspace/vesc_msgs-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/model2/racecar-ws/devel/include/vesc_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/model3/new/racecar_ws/devel/include/vesc_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/model2/racecar-ws/devel/share/roseus/ros/vesc_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/model3/new/racecar_ws/devel/share/roseus/ros/vesc_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/model2/racecar-ws/devel/share/common-lisp/ros/vesc_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/model3/new/racecar_ws/devel/share/common-lisp/ros/vesc_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/model2/racecar-ws/devel/share/gennodejs/ros/vesc_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/model3/new/racecar_ws/devel/share/gennodejs/ros/vesc_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/model2/racecar-ws/devel/lib/python2.7/dist-packages/vesc_msgs")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/model3/new/racecar_ws/devel/lib/python2.7/dist-packages/vesc_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/model2/racecar-ws/devel/lib/python2.7/dist-packages/vesc_msgs")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/model3/new/racecar_ws/devel/lib/python2.7/dist-packages/vesc_msgs")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/model2/racecar-ws/build/vesc/vesc_msgs/catkin_generated/installspace/vesc_msgs.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/model3/new/racecar_ws/build/vesc/vesc_msgs/catkin_generated/installspace/vesc_msgs.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vesc_msgs/cmake" TYPE FILE FILES "/home/model2/racecar-ws/build/vesc/vesc_msgs/catkin_generated/installspace/vesc_msgs-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vesc_msgs/cmake" TYPE FILE FILES "/home/model3/new/racecar_ws/build/vesc/vesc_msgs/catkin_generated/installspace/vesc_msgs-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vesc_msgs/cmake" TYPE FILE FILES
-    "/home/model2/racecar-ws/build/vesc/vesc_msgs/catkin_generated/installspace/vesc_msgsConfig.cmake"
-    "/home/model2/racecar-ws/build/vesc/vesc_msgs/catkin_generated/installspace/vesc_msgsConfig-version.cmake"
+    "/home/model3/new/racecar_ws/build/vesc/vesc_msgs/catkin_generated/installspace/vesc_msgsConfig.cmake"
+    "/home/model3/new/racecar_ws/build/vesc/vesc_msgs/catkin_generated/installspace/vesc_msgsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vesc_msgs" TYPE FILE FILES "/home/model2/racecar-ws/src/vesc/vesc_msgs/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vesc_msgs" TYPE FILE FILES "/home/model3/new/racecar_ws/src/vesc/vesc_msgs/package.xml")
 endif()
 
