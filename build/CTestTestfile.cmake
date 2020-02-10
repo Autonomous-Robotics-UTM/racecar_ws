@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/model3/new/racecar_ws/src
-# Build directory: /home/model3/new/racecar_ws/build
+# Source directory: /home/model3/racecar_ws/src
+# Build directory: /home/model3/racecar_ws/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

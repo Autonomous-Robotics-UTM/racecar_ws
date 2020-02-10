@@ -67,14 +67,14 @@ set(razor_imu_9dof_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(razor_imu_9dof_SOURCE_PREFIX /home/model3/new/racecar_ws/src/razor_imu_9dof)
-  set(razor_imu_9dof_DEVEL_PREFIX /home/model3/new/racecar_ws/devel)
+  set(razor_imu_9dof_SOURCE_PREFIX /home/model3/racecar_ws/src/razor_imu_9dof)
+  set(razor_imu_9dof_DEVEL_PREFIX /home/model3/racecar_ws/devel)
   set(razor_imu_9dof_INSTALL_PREFIX "")
   set(razor_imu_9dof_PREFIX ${razor_imu_9dof_DEVEL_PREFIX})
 else()
   set(razor_imu_9dof_SOURCE_PREFIX "")
   set(razor_imu_9dof_DEVEL_PREFIX "")
-  set(razor_imu_9dof_INSTALL_PREFIX /home/model3/new/racecar_ws/install)
+  set(razor_imu_9dof_INSTALL_PREFIX /home/model3/racecar_ws/install)
   set(razor_imu_9dof_PREFIX ${razor_imu_9dof_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/model3/new/racecar_ws/install/lib;/home/model3/csc477/csc477_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/model3/racecar_ws/install/lib;/home/model3/racecar_ws/devel/lib;/home/model3/csc477/csc477_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

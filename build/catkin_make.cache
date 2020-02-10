@@ -1,2 +1,2 @@
 racecar-controllers/racecar_controllers:racecar-controllers/racecar_potential_field_controller:racecar-controllers/racecar_safety_controller:racecar/ackermann_cmd_mux:racecar/racecar:razor_imu_9dof:realsense-ros-2.2.8/realsense2_camera:realsense-ros-2.2.8/realsense2_description:ros_numpy/ros_numpy:vesc/vesc:vesc/vesc_ackermann:vesc/vesc_driver:vesc/vesc_msgs
--DCATKIN_DEVEL_PREFIX=/home/model3/new/racecar_ws/devel -DCMAKE_INSTALL_PREFIX=/home/model3/new/racecar_ws/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/model3/racecar_ws/devel -DCMAKE_INSTALL_PREFIX=/home/model3/racecar_ws/install -G Unix Makefiles

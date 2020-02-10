@@ -28,7 +28,7 @@ class DepthReader:
 	plt.show()
 
     def init(self):
-    	self.im.set_data(np.zeros((300, 300)))
+    	self.im.set_data(np.zeros((1000,1000)))
 	
 	
     def animate(self,i):
@@ -68,13 +68,18 @@ class DepthReader:
 	ys = sensor[:,1:2].squeeze()
 	ys = np.round(ys*100)+150
 	ys = ys.astype(int)
+	ys[ys>300] = 299
+	ys[ys<0] = 0
+
+	xs[xs>300] = 299
+	xs[xs<0] = 0
 
 	self.data[ys,xs] = zs*100
 	#print(sensor[:,3])
+	print(np.max(self.data))
 	
-
 	
-		#print " x : %f  y: %f  z: %f" %(p[0],p[1],p[2])
+	#print " x : %f  y: %f  z: %f" %(p[0],p[1],p[2])
 	self.ready = True
 	#plt.show()
 	#print(min_y)

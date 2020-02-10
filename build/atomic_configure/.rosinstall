@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/model3/new/racecar_ws/devel/setup.sh
+    local-name: /home/model3/racecar_ws/devel/setup.sh

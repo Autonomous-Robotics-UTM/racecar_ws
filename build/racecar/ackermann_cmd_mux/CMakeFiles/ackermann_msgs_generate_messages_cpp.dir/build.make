@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/model3/new/racecar_ws/src
+CMAKE_SOURCE_DIR = /home/model3/racecar_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/model3/new/racecar_ws/build
+CMAKE_BINARY_DIR = /home/model3/racecar_ws/build
 
 # Utility rule file for ackermann_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ racecar/ackermann_cmd_mux/CMakeFiles/ackermann_msgs_generate_messages_cpp.dir/bu
 .PHONY : racecar/ackermann_cmd_mux/CMakeFiles/ackermann_msgs_generate_messages_cpp.dir/build
 
 racecar/ackermann_cmd_mux/CMakeFiles/ackermann_msgs_generate_messages_cpp.dir/clean:
-	cd /home/model3/new/racecar_ws/build/racecar/ackermann_cmd_mux && $(CMAKE_COMMAND) -P CMakeFiles/ackermann_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/model3/racecar_ws/build/racecar/ackermann_cmd_mux && $(CMAKE_COMMAND) -P CMakeFiles/ackermann_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : racecar/ackermann_cmd_mux/CMakeFiles/ackermann_msgs_generate_messages_cpp.dir/clean
 
 racecar/ackermann_cmd_mux/CMakeFiles/ackermann_msgs_generate_messages_cpp.dir/depend:
-	cd /home/model3/new/racecar_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/model3/new/racecar_ws/src /home/model3/new/racecar_ws/src/racecar/ackermann_cmd_mux /home/model3/new/racecar_ws/build /home/model3/new/racecar_ws/build/racecar/ackermann_cmd_mux /home/model3/new/racecar_ws/build/racecar/ackermann_cmd_mux/CMakeFiles/ackermann_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/model3/racecar_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/model3/racecar_ws/src /home/model3/racecar_ws/src/racecar/ackermann_cmd_mux /home/model3/racecar_ws/build /home/model3/racecar_ws/build/racecar/ackermann_cmd_mux /home/model3/racecar_ws/build/racecar/ackermann_cmd_mux/CMakeFiles/ackermann_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : racecar/ackermann_cmd_mux/CMakeFiles/ackermann_msgs_generate_messages_cpp.dir/depend
 

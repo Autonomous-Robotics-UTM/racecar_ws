@@ -11,7 +11,7 @@ teleop:
     deadman_buttons: [4]
     axis_mappings:
       -
-        axis: 4
+        axis: 1
         target: drive.speed
         scale: 2.0                   # joystick will command plus or minus 2 meters / second
         offset: 0.0
