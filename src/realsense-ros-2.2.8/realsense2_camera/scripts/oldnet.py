@@ -9,7 +9,10 @@ from geometry_msgs.msg import TwistStamped
 import numpy as np
 import torch.nn as nn
 from ackermann_msgs.msg import AckermannDriveStamped
-
+import time
+from os import listdir
+from os.path import isfile, join
+import message_filters
 
 PATH = '~/racecar_ws/src/realsense-ros-2.2.8/realsense2_camera/scripts/model.pt'
 DIR = "/home/model3/racecar_ws/src/realsense-ros-2.2.8/realsense2_camera/scripts"
@@ -54,41 +57,57 @@ class ConvNet(nn.Module):
 
 class NNRunner:
 
-    def __init__(self):
+    def __init__(self, device):
+
         self.ready = False
+
         # create a ros node
         rospy.init_node("nn_runner", anonymous=True)
+        self.device = device
 
         # initialize image streams
         self.bridge = CvBridge()
-        self.image_stream = rospy.Subscriber("/camera/color/image_raw", Image, self.image_stream_callback)
+
+        self.image_stream = message_filters.Subscriber("/camera/color/image_raw", Image)
+        self.depth_stream = message_filters.Subscriber("/camera/aligned_depth_to_color/image_raw", Image)
+        ts = message_filters.ApproximateTimeSynchronizer([self.image_stream, self.depth_stream], 1, 1)
+        ts.registerCallback(self.image_stream_callback)
+
         self.ack_pub = rospy.Publisher("/ackermann_cmd_mux/input/default", AckermannDriveStamped, queue_size=10)
 
-        from os import listdir
-        from os.path import isfile, join
-        onlyfiles = [f for f in listdir(DIR) if isfile(join(DIR, f))]
-        print(onlyfiles)
-        # initialize neural net
-        self.model = ConvNet()
-        self.model.load_state_dict(torch.load(DIR+"/model.pt"))
-        print(type(self.model))
+        # onlyfiles = [f for f in listdir(DIR) if isfile(join(DIR, f))]
+        # print(onlyfiles)
+        # # initialize neural net
+        # self.model = ConvNet().to(self.device)
+        # self.load(DIR+"/model.pt")
+        # print(type(self.model))
 
         # initialize publishing command variables
-        #self.cmd_pub = rospy.Publisher('/husky_1/cmd_vel', TwistStamped, queue_size=10)
+        self.cmd_pub = rospy.Publisher('/husky_1/cmd_vel', TwistStamped, queue_size=10)
         self.forward_speed = 1000
         self.hz = 50
         self.now = rospy.get_rostime()
-        self.ready=True
+        self.ready = True
 
-    def image_stream_callback(self, image_msg):
+    def load(self,path):
+        checkpoint = torch.load(path)
+        self.model.load_state_dict(checkpoint['model_state_dict'])
+
+    def image_stream_callback(self, image_msg, depth_msg):
         if self.ready:
             try:
                 # grab nn output from image stream
+                start = time.time()
+                
                 cv_image = self.bridge.imgmsg_to_cv2(image_msg, "bgr8")
+
                 cv_image = np.array([cv_image.transpose((2,0,1))])
-                cv_image = torch.Tensor(cv_image)
-                steer = self.model(cv_image) # TODO: fix; needs to be converted to proper nn image format
-                print(steer.detach().numpy()[0][0])
+                print(cv_image.shape)
+                # cv_image = torch.Tensor(cv_image).to(self.device)
+                # steer = self.model(cv_image)
+                # output = torch.argmax(steer)
+                #print(steer.detach().numpy())
+                # print(output)
                 # publish to /husky_1/cmd_vel
                 #cmd = TwistStamped()
                 #cmd.twist.linear.x = self.forward_speed
@@ -96,17 +115,18 @@ class NNRunner:
                 #cmd.header.stamp.secs = self.now.secs
                 #cmd.header.stamp.nsecs = self.now.nsecs
                 #self.cmd_pub.publish(cmd)
-
+                """
                 if steer > 0.34:
                     steer = 0.34
                 if steer < -0.34:
                     steer = -0.34
-
+                """
                 ack_msg = AckermannDriveStamped()
                 ack_msg.header.stamp = rospy.Time.now()
                 ack_msg.drive.speed = 2
                 ack_msg.drive.steering_angle = steer
-                self.ack_pub.publish(ack_msg)
+                #self.ack_pub.publish(ack_msg)
+                print(time.time()-start)
                                     
             except CvBridgeError as e:
                 print(e)
@@ -117,5 +137,6 @@ class NNRunner:
             rate.sleep()
 
 if __name__ == '__main__':
-    nn = NNRunner()
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    nn = NNRunner(device)
     nn.run()

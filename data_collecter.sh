@@ -1,2 +1,2 @@
 source devel/setup.bash
-rosrun realsense2_camera image_loader.py
+rosrun realsense2_camera record_data.py
