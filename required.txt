@@ -1,0 +1,12 @@
+pip install catkin_pkg
+sudo apt install ros-melodic-ackermann-msgs
+sudo apt install ros-melodic-serial
+pip install rospkg
+pip install empy
+sudo apt install ros-melodic-urg-node
+sudo apt install ros-melodic-joy-teleop
+sudo apt install ros-melodic-joy
+pip install pyserial
+pip install pycrypto
+pip install python-gnupg
+

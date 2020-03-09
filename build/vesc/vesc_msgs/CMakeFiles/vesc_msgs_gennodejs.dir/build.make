@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/model3/racecar_ws/src
+CMAKE_SOURCE_DIR = /home/michael/Documents/CSC493/racecar_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/model3/racecar_ws/build
+CMAKE_BINARY_DIR = /home/michael/Documents/CSC493/racecar_ws/build
 
 # Utility rule file for vesc_msgs_gennodejs.
 
@@ -63,10 +63,10 @@ vesc/vesc_msgs/CMakeFiles/vesc_msgs_gennodejs.dir/build: vesc_msgs_gennodejs
 .PHONY : vesc/vesc_msgs/CMakeFiles/vesc_msgs_gennodejs.dir/build
 
 vesc/vesc_msgs/CMakeFiles/vesc_msgs_gennodejs.dir/clean:
-	cd /home/model3/racecar_ws/build/vesc/vesc_msgs && $(CMAKE_COMMAND) -P CMakeFiles/vesc_msgs_gennodejs.dir/cmake_clean.cmake
+	cd /home/michael/Documents/CSC493/racecar_ws/build/vesc/vesc_msgs && $(CMAKE_COMMAND) -P CMakeFiles/vesc_msgs_gennodejs.dir/cmake_clean.cmake
 .PHONY : vesc/vesc_msgs/CMakeFiles/vesc_msgs_gennodejs.dir/clean
 
 vesc/vesc_msgs/CMakeFiles/vesc_msgs_gennodejs.dir/depend:
-	cd /home/model3/racecar_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/model3/racecar_ws/src /home/model3/racecar_ws/src/vesc/vesc_msgs /home/model3/racecar_ws/build /home/model3/racecar_ws/build/vesc/vesc_msgs /home/model3/racecar_ws/build/vesc/vesc_msgs/CMakeFiles/vesc_msgs_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/michael/Documents/CSC493/racecar_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/michael/Documents/CSC493/racecar_ws/src /home/michael/Documents/CSC493/racecar_ws/src/vesc/vesc_msgs /home/michael/Documents/CSC493/racecar_ws/build /home/michael/Documents/CSC493/racecar_ws/build/vesc/vesc_msgs /home/michael/Documents/CSC493/racecar_ws/build/vesc/vesc_msgs/CMakeFiles/vesc_msgs_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : vesc/vesc_msgs/CMakeFiles/vesc_msgs_gennodejs.dir/depend
 

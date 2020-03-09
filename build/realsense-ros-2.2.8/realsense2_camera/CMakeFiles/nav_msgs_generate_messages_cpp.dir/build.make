@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/model3/racecar_ws/src
+CMAKE_SOURCE_DIR = /home/michael/Documents/CSC493/racecar_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/model3/racecar_ws/build
+CMAKE_BINARY_DIR = /home/michael/Documents/CSC493/racecar_ws/build
 
 # Utility rule file for nav_msgs_generate_messages_cpp.
 
@@ -63,10 +63,10 @@ realsense-ros-2.2.8/realsense2_camera/CMakeFiles/nav_msgs_generate_messages_cpp.
 .PHONY : realsense-ros-2.2.8/realsense2_camera/CMakeFiles/nav_msgs_generate_messages_cpp.dir/build
 
 realsense-ros-2.2.8/realsense2_camera/CMakeFiles/nav_msgs_generate_messages_cpp.dir/clean:
-	cd /home/model3/racecar_ws/build/realsense-ros-2.2.8/realsense2_camera && $(CMAKE_COMMAND) -P CMakeFiles/nav_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/michael/Documents/CSC493/racecar_ws/build/realsense-ros-2.2.8/realsense2_camera && $(CMAKE_COMMAND) -P CMakeFiles/nav_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : realsense-ros-2.2.8/realsense2_camera/CMakeFiles/nav_msgs_generate_messages_cpp.dir/clean
 
 realsense-ros-2.2.8/realsense2_camera/CMakeFiles/nav_msgs_generate_messages_cpp.dir/depend:
-	cd /home/model3/racecar_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/model3/racecar_ws/src /home/model3/racecar_ws/src/realsense-ros-2.2.8/realsense2_camera /home/model3/racecar_ws/build /home/model3/racecar_ws/build/realsense-ros-2.2.8/realsense2_camera /home/model3/racecar_ws/build/realsense-ros-2.2.8/realsense2_camera/CMakeFiles/nav_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/michael/Documents/CSC493/racecar_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/michael/Documents/CSC493/racecar_ws/src /home/michael/Documents/CSC493/racecar_ws/src/realsense-ros-2.2.8/realsense2_camera /home/michael/Documents/CSC493/racecar_ws/build /home/michael/Documents/CSC493/racecar_ws/build/realsense-ros-2.2.8/realsense2_camera /home/michael/Documents/CSC493/racecar_ws/build/realsense-ros-2.2.8/realsense2_camera/CMakeFiles/nav_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : realsense-ros-2.2.8/realsense2_camera/CMakeFiles/nav_msgs_generate_messages_cpp.dir/depend
 

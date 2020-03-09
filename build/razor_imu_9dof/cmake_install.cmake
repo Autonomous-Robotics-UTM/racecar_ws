@@ -1,8 +1,8 @@
-# Install script for directory: /home/model3/racecar_ws/src/razor_imu_9dof
+# Install script for directory: /home/michael/Documents/CSC493/racecar_ws/src/razor_imu_9dof
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/model3/racecar_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/michael/Documents/CSC493/racecar_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,61 +38,61 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/razor_imu_9dof" TYPE FILE FILES "/home/model3/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/razor_imu_9dof" TYPE FILE FILES "/home/michael/Documents/CSC493/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/razor_imu_9dof" TYPE FILE FILES "/home/model3/racecar_ws/devel/lib/python2.7/dist-packages/razor_imu_9dof/__init__.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/razor_imu_9dof" TYPE FILE FILES "/home/michael/Documents/CSC493/racecar_ws/devel/lib/python2.7/dist-packages/razor_imu_9dof/__init__.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/model3/racecar_ws/devel/lib/python2.7/dist-packages/razor_imu_9dof/cfg")
+  execute_process(COMMAND "/home/michael/anaconda3/envs/ros/bin/python2" -m compileall "/home/michael/Documents/CSC493/racecar_ws/devel/lib/python2.7/dist-packages/razor_imu_9dof/cfg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/razor_imu_9dof" TYPE DIRECTORY FILES "/home/model3/racecar_ws/devel/lib/python2.7/dist-packages/razor_imu_9dof/cfg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages/razor_imu_9dof" TYPE DIRECTORY FILES "/home/michael/Documents/CSC493/racecar_ws/devel/lib/python2.7/dist-packages/razor_imu_9dof/cfg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/model3/racecar_ws/build/razor_imu_9dof/catkin_generated/installspace/razor_imu_9dof.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/michael/Documents/CSC493/racecar_ws/build/razor_imu_9dof/catkin_generated/installspace/razor_imu_9dof.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/razor_imu_9dof/cmake" TYPE FILE FILES
-    "/home/model3/racecar_ws/build/razor_imu_9dof/catkin_generated/installspace/razor_imu_9dofConfig.cmake"
-    "/home/model3/racecar_ws/build/razor_imu_9dof/catkin_generated/installspace/razor_imu_9dofConfig-version.cmake"
+    "/home/michael/Documents/CSC493/racecar_ws/build/razor_imu_9dof/catkin_generated/installspace/razor_imu_9dofConfig.cmake"
+    "/home/michael/Documents/CSC493/racecar_ws/build/razor_imu_9dof/catkin_generated/installspace/razor_imu_9dofConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/razor_imu_9dof" TYPE FILE FILES "/home/model3/racecar_ws/src/razor_imu_9dof/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/razor_imu_9dof" TYPE FILE FILES "/home/michael/Documents/CSC493/racecar_ws/src/razor_imu_9dof/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/razor_imu_9dof" TYPE DIRECTORY FILES "/home/model3/racecar_ws/src/razor_imu_9dof/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/razor_imu_9dof" TYPE DIRECTORY FILES "/home/michael/Documents/CSC493/racecar_ws/src/razor_imu_9dof/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/razor_imu_9dof" TYPE DIRECTORY FILES "/home/model3/racecar_ws/src/razor_imu_9dof/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/razor_imu_9dof" TYPE DIRECTORY FILES "/home/michael/Documents/CSC493/racecar_ws/src/razor_imu_9dof/config")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/razor_imu_9dof" TYPE DIRECTORY FILES "/home/model3/racecar_ws/src/razor_imu_9dof/cfg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/razor_imu_9dof" TYPE DIRECTORY FILES "/home/michael/Documents/CSC493/racecar_ws/src/razor_imu_9dof/cfg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/razor_imu_9dof" TYPE DIRECTORY FILES "/home/model3/racecar_ws/src/razor_imu_9dof/src")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/razor_imu_9dof" TYPE DIRECTORY FILES "/home/michael/Documents/CSC493/racecar_ws/src/razor_imu_9dof/src")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/razor_imu_9dof" TYPE DIRECTORY FILES "/home/model3/racecar_ws/src/razor_imu_9dof/magnetometer_calibration")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/razor_imu_9dof" TYPE DIRECTORY FILES "/home/michael/Documents/CSC493/racecar_ws/src/razor_imu_9dof/magnetometer_calibration")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/razor_imu_9dof/nodes" TYPE PROGRAM FILES "/home/model3/racecar_ws/build/razor_imu_9dof/catkin_generated/installspace/imu_node.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/razor_imu_9dof/nodes" TYPE PROGRAM FILES "/home/michael/Documents/CSC493/racecar_ws/build/razor_imu_9dof/catkin_generated/installspace/imu_node.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/razor_imu_9dof/nodes" TYPE PROGRAM FILES "/home/model3/racecar_ws/build/razor_imu_9dof/catkin_generated/installspace/display_3D_visualization.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/razor_imu_9dof/nodes" TYPE PROGRAM FILES "/home/michael/Documents/CSC493/racecar_ws/build/razor_imu_9dof/catkin_generated/installspace/display_3D_visualization.py")
 endif()
 

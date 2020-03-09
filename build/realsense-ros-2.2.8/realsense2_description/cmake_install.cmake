@@ -1,8 +1,8 @@
-# Install script for directory: /home/model3/racecar_ws/src/realsense-ros-2.2.8/realsense2_description
+# Install script for directory: /home/michael/Documents/CSC493/racecar_ws/src/realsense-ros-2.2.8/realsense2_description
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/model3/racecar_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/michael/Documents/CSC493/racecar_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,26 +38,26 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/model3/racecar_ws/build/realsense-ros-2.2.8/realsense2_description/catkin_generated/installspace/realsense2_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/michael/Documents/CSC493/racecar_ws/build/realsense-ros-2.2.8/realsense2_description/catkin_generated/installspace/realsense2_description.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_description/cmake" TYPE FILE FILES
-    "/home/model3/racecar_ws/build/realsense-ros-2.2.8/realsense2_description/catkin_generated/installspace/realsense2_descriptionConfig.cmake"
-    "/home/model3/racecar_ws/build/realsense-ros-2.2.8/realsense2_description/catkin_generated/installspace/realsense2_descriptionConfig-version.cmake"
+    "/home/michael/Documents/CSC493/racecar_ws/build/realsense-ros-2.2.8/realsense2_description/catkin_generated/installspace/realsense2_descriptionConfig.cmake"
+    "/home/michael/Documents/CSC493/racecar_ws/build/realsense-ros-2.2.8/realsense2_description/catkin_generated/installspace/realsense2_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_description" TYPE FILE FILES "/home/model3/racecar_ws/src/realsense-ros-2.2.8/realsense2_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_description" TYPE FILE FILES "/home/michael/Documents/CSC493/racecar_ws/src/realsense-ros-2.2.8/realsense2_description/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/realsense2_description" TYPE DIRECTORY FILES
-    "/home/model3/racecar_ws/src/realsense-ros-2.2.8/realsense2_description/launch"
-    "/home/model3/racecar_ws/src/realsense-ros-2.2.8/realsense2_description/meshes"
-    "/home/model3/racecar_ws/src/realsense-ros-2.2.8/realsense2_description/rviz"
-    "/home/model3/racecar_ws/src/realsense-ros-2.2.8/realsense2_description/urdf"
+    "/home/michael/Documents/CSC493/racecar_ws/src/realsense-ros-2.2.8/realsense2_description/launch"
+    "/home/michael/Documents/CSC493/racecar_ws/src/realsense-ros-2.2.8/realsense2_description/meshes"
+    "/home/michael/Documents/CSC493/racecar_ws/src/realsense-ros-2.2.8/realsense2_description/rviz"
+    "/home/michael/Documents/CSC493/racecar_ws/src/realsense-ros-2.2.8/realsense2_description/urdf"
     )
 endif()
 

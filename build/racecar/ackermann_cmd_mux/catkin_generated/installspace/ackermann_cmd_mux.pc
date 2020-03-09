@@ -1,4 +1,4 @@
-prefix=/home/model3/racecar_ws/install
+prefix=/home/michael/Documents/CSC493/racecar_ws/install
 
 Name: ackermann_cmd_mux
 Description: Description of ackermann_cmd_mux

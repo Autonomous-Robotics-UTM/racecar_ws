@@ -22,6 +22,7 @@ import os
 import time
 import message_filters
 from ackermann_msgs.msg import AckermannDriveStamped
+import math
 
 # get arguments
 import sys
@@ -35,7 +36,7 @@ class ImageSaver:
 	def __init__(self):
 		print("Initializing...")
 		rospy.init_node("image_saver", anonymous=True)
-  		self.bridge = CvBridge()
+		self.bridge = CvBridge()
 		#Subscribe to the image output of the camera
 		self.image_stream = message_filters.Subscriber("/camera/color/image_raw", Image)
 
@@ -66,14 +67,14 @@ class ImageSaver:
 		global counter
 		global saved_timestamp
 		global frame
-		print(counter)
+		#print(counter)
 		try:
 			cv_image = self.bridge.imgmsg_to_cv2(image_msg, "bgr8")
 
 			# process depth data from stream
 			# todo: figure out why depth information looks weird
 			
-			cv_depth = self.bridge.imgmsg_to_cv2(depth_msg, "mono16")
+			cv_depth = self.bridge.imgmsg_to_cv2(depth_msg, "32FC1")
 			#cv_depth = np.array(depth_msg)
 			#print("")
 			#print(cv_depth)
@@ -99,10 +100,20 @@ class ImageSaver:
 						# cv_max = np.max(cv_depth)
 						cv_max = 10000
 						#cv_depth = ((cv_depth - cv_min)/(cv_max - cv_min))*255
-						# cv_depth = np.log(cv_depth) * 255
-						print(cv_depth)	
+						#cv_depth[cv_depth==float("-inf")] = 0
+						#cv_depth = cv_depth*255/6000
+						#cv_depth = cv_depth.astype(np.uint16)
+						cv_image_array = np.array(cv_depth, dtype = np.dtype('f8'))
+						cv_image_norm = cv2.normalize(cv_image_array, cv_image_array, 0, 1, cv2.NORM_MINMAX)
+						cv_image_norm *= 255
+						#maximum = float(np.max(cv_depth))
+						#cv_depth = 255-(cv_depth/maximum)*255
+						#print(maximum)
+						print(np.unique(cv_image_norm))
+						#print(type(cv_depth[0][0]))
+						#print(cv_depth)	
 						#print(depth_msg)
-						save_image(depth_path, current_timestamp, cv_depth)
+						save_image(depth_path, current_timestamp, cv_image_norm)
 
 					self.file.write(current_timestamp+" "+str(joy_msg.axes[3])+"\n")
 					saved_timestamp = current_timestamp
@@ -150,10 +161,10 @@ class ImageSaver:
 
 	def run(self):
 		try:
-    			rospy.spin()
-  		except KeyboardInterrupt:
-    			print("Shutting down")
-  		cv2.destroyAllWindows()
+			rospy.spin()
+		except KeyboardInterrupt:
+			print("Shutting down")
+		cv2.destroyAllWindows()
 
 
 def showStream():

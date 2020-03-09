@@ -7,5 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/home/model3/racecar_ws/build"
-export ROS_PACKAGE_PATH="/home/model3/racecar_ws/src:/home/model3/csc477/csc477_ws/src:/opt/ros/melodic/share"
+export PWD="/home/michael/Documents/CSC493/racecar_ws/build"

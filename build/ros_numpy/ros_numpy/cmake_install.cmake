@@ -1,8 +1,8 @@
-# Install script for directory: /home/model3/racecar_ws/src/ros_numpy/ros_numpy
+# Install script for directory: /home/michael/Documents/CSC493/racecar_ws/src/ros_numpy/ros_numpy
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/model3/racecar_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/michael/Documents/CSC493/racecar_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,21 +38,21 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/home/model3/racecar_ws/build/ros_numpy/ros_numpy/catkin_generated/safe_execute_install.cmake")
+  include("/home/michael/Documents/CSC493/racecar_ws/build/ros_numpy/ros_numpy/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/model3/racecar_ws/build/ros_numpy/ros_numpy/catkin_generated/installspace/ros_numpy.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/michael/Documents/CSC493/racecar_ws/build/ros_numpy/ros_numpy/catkin_generated/installspace/ros_numpy.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_numpy/cmake" TYPE FILE FILES
-    "/home/model3/racecar_ws/build/ros_numpy/ros_numpy/catkin_generated/installspace/ros_numpyConfig.cmake"
-    "/home/model3/racecar_ws/build/ros_numpy/ros_numpy/catkin_generated/installspace/ros_numpyConfig-version.cmake"
+    "/home/michael/Documents/CSC493/racecar_ws/build/ros_numpy/ros_numpy/catkin_generated/installspace/ros_numpyConfig.cmake"
+    "/home/michael/Documents/CSC493/racecar_ws/build/ros_numpy/ros_numpy/catkin_generated/installspace/ros_numpyConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_numpy" TYPE FILE FILES "/home/model3/racecar_ws/src/ros_numpy/ros_numpy/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ros_numpy" TYPE FILE FILES "/home/michael/Documents/CSC493/racecar_ws/src/ros_numpy/ros_numpy/package.xml")
 endif()
 

@@ -1,4 +1,4 @@
-prefix=/home/model3/racecar_ws/install
+prefix=/home/michael/Documents/CSC493/racecar_ws/install
 
 Name: ros_numpy
 Description: Description of ros_numpy
