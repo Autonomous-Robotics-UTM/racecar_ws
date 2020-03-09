@@ -23,45 +23,87 @@ import time
 import message_filters
 from ackermann_msgs.msg import AckermannDriveStamped
 
+# get arguments
+import sys
 
 counter = 50000
 saved_timestamp = 0
 frame = 0
+np.set_printoptions(threshold=sys.maxsize)
 class ImageSaver:
 
 	def __init__(self):
+		print("Initializing...")
 		rospy.init_node("image_saver", anonymous=True)
   		self.bridge = CvBridge()
 		#Subscribe to the image output of the camera
 		self.image_stream = message_filters.Subscriber("/camera/color/image_raw", Image)
 
+		# depth data
+		self.depth_stream = message_filters.Subscriber("/camera/aligned_depth_to_color/image_raw", Image)
+
 		# collect joystick data
 		self.control_stream = message_filters.Subscriber("/joy",Joy)
-		# ts = message_filters.ApproximateTimeSynchronizer([self.image_stream, self.control_stream], 1, 1)
-		# ts.registerCallback(self.syncCallBack)
+		ts = message_filters.ApproximateTimeSynchronizer([self.image_stream, self.control_stream, self.depth_stream], 1, 1)
+		ts.registerCallback(self.syncCallBack)
 
 		# collect pid angle data
-		self.pid_stream = message_filters.Subscriber("/ackermann_cmd_mux/input/default", AckermannDriveStamped, queue_size=10)
-		ts = message_filters.ApproximateTimeSynchronizer([self.image_stream, self.pid_stream,self.control_stream], 1, 1)
-		ts.registerCallback(self.syncCallBackPid)
+		# self.pid_stream = message_filters.Subscriber("/ackermann_cmd_mux/input/default", AckermannDriveStamped, queue_size=10)
+		# ts = message_filters.ApproximateTimeSynchronizer([self.image_stream, self.pid_stream,self.control_stream], 1, 1)
+		# ts.registerCallback(self.syncCallBackPid)
 
 		self.file = open("labels.txt","w")
 
+		self.depth = False
+		if len(sys.argv) > 1 and sys.argv[1] == "depth:=true":
+			self.depth = True
+
+		
 
 
 
-	def syncCallBack(self, image_msg, joy_msg):
+	def syncCallBack(self, image_msg, joy_msg, depth_msg):
 		global counter
 		global saved_timestamp
 		global frame
 		print(counter)
 		try:
 			cv_image = self.bridge.imgmsg_to_cv2(image_msg, "bgr8")
+
+			# process depth data from stream
+			# todo: figure out why depth information looks weird
+			
+			cv_depth = self.bridge.imgmsg_to_cv2(depth_msg, "mono16")
+			#cv_depth = np.array(depth_msg)
+			#print("")
+			#print(cv_depth)
+			#print("")
+			#print("arguments:", sys.argv)
+
 			path = os.getenv("HOME") + "/images/"
+			depth_path = os.getenv("HOME") + "/d_images/"
+
 			if counter > 0 and joy_msg.buttons[5]:
+
+				print("collecting data..")
+				
 				current_timestamp = str(image_msg.header.stamp.secs) + str(image_msg.header.stamp.nsecs) 
 				if(saved_timestamp != current_timestamp):
 					save_image(path, current_timestamp, cv_image)
+					
+					# save depth images if specified
+					if self.depth:
+						print("saving depth information")
+						# cv_min = np.min(cv_depth)
+						cv_min = 200
+						# cv_max = np.max(cv_depth)
+						cv_max = 10000
+						#cv_depth = ((cv_depth - cv_min)/(cv_max - cv_min))*255
+						# cv_depth = np.log(cv_depth) * 255
+						print(cv_depth)	
+						#print(depth_msg)
+						save_image(depth_path, current_timestamp, cv_depth)
+
 					self.file.write(current_timestamp+" "+str(joy_msg.axes[3])+"\n")
 					saved_timestamp = current_timestamp
 					frame = 0
