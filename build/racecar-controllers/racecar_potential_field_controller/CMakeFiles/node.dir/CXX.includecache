@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/michael/Documents/CSC493/racecar_ws/devel/include/racecar_potential_field_controller/RacecarPotentialFieldControllerConfig.h
+/home/model3/racecar_ws/devel/include/racecar_potential_field_controller/RacecarPotentialFieldControllerConfig.h
 dynamic_reconfigure/config_tools.h
 -
 limits
@@ -24,7 +24,7 @@ dynamic_reconfigure/config_init_mutex.h
 boost/any.hpp
 -
 
-/home/michael/Documents/CSC493/racecar_ws/src/racecar-controllers/racecar_potential_field_controller/include/racecar_potential_field_controller/controller.h
+/home/model3/racecar_ws/src/racecar-controllers/racecar_potential_field_controller/include/racecar_potential_field_controller/controller.h
 string
 -
 ros/ros.h
@@ -36,11 +36,11 @@ ackermann_msgs/AckermannDriveStamped.h
 dynamic_reconfigure/server.h
 -
 racecar_potential_field_controller/RacecarPotentialFieldControllerConfig.h
-/home/michael/Documents/CSC493/racecar_ws/src/racecar-controllers/racecar_potential_field_controller/include/racecar_potential_field_controller/racecar_potential_field_controller/RacecarPotentialFieldControllerConfig.h
+/home/model3/racecar_ws/src/racecar-controllers/racecar_potential_field_controller/include/racecar_potential_field_controller/racecar_potential_field_controller/RacecarPotentialFieldControllerConfig.h
 
-/home/michael/Documents/CSC493/racecar_ws/src/racecar-controllers/racecar_potential_field_controller/src/controller.cpp
+/home/model3/racecar_ws/src/racecar-controllers/racecar_potential_field_controller/src/controller.cpp
 racecar_potential_field_controller/controller.h
-/home/michael/Documents/CSC493/racecar_ws/src/racecar-controllers/racecar_potential_field_controller/src/racecar_potential_field_controller/controller.h
+/home/model3/racecar_ws/src/racecar-controllers/racecar_potential_field_controller/src/racecar_potential_field_controller/controller.h
 algorithm
 -
 cmath
@@ -58,13 +58,13 @@ visualization_msgs/MarkerArray.h
 boost/bind.hpp
 -
 
-/home/michael/Documents/CSC493/racecar_ws/src/racecar-controllers/racecar_potential_field_controller/src/node.cpp
+/home/model3/racecar_ws/src/racecar-controllers/racecar_potential_field_controller/src/node.cpp
 boost/shared_ptr.hpp
 -
 ros/ros.h
 -
 racecar_potential_field_controller/controller.h
-/home/michael/Documents/CSC493/racecar_ws/src/racecar-controllers/racecar_potential_field_controller/src/racecar_potential_field_controller/controller.h
+/home/model3/racecar_ws/src/racecar-controllers/racecar_potential_field_controller/src/racecar_potential_field_controller/controller.h
 
 /opt/ros/melodic/include/ackermann_msgs/AckermannDrive.h
 string

@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/node.dir/src/node.cpp.o"
   "CMakeFiles/node.dir/src/controller.cpp.o"
-  "/home/michael/Documents/CSC493/racecar_ws/devel/lib/racecar_potential_field_controller/node.pdb"
-  "/home/michael/Documents/CSC493/racecar_ws/devel/lib/racecar_potential_field_controller/node"
+  "/home/model3/racecar_ws/devel/lib/racecar_potential_field_controller/node.pdb"
+  "/home/model3/racecar_ws/devel/lib/racecar_potential_field_controller/node"
 )
 
 # Per-language clean rules from dependency scanning.

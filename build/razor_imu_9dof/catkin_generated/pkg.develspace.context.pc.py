@@ -1,8 +1,8 @@
 # generated from catkin/cmake/template/pkg.context.pc.in
 CATKIN_PACKAGE_PREFIX = ""
-PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/michael/Documents/CSC493/racecar_ws/devel/include".split(';') if "/home/michael/Documents/CSC493/racecar_ws/devel/include" != "" else []
+PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/home/model3/racecar_ws/devel/include".split(';') if "/home/model3/racecar_ws/devel/include" != "" else []
 PROJECT_CATKIN_DEPENDS = "dynamic_reconfigure".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "razor_imu_9dof"
-PROJECT_SPACE_DIR = "/home/michael/Documents/CSC493/racecar_ws/devel"
+PROJECT_SPACE_DIR = "/home/model3/racecar_ws/devel"
 PROJECT_VERSION = "1.2.0"

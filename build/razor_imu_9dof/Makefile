@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/michael/Documents/CSC493/racecar_ws/src
+CMAKE_SOURCE_DIR = /home/model3/racecar_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/michael/Documents/CSC493/racecar_ws/build
+CMAKE_BINARY_DIR = /home/model3/racecar_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -114,8 +114,8 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -137,14 +137,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/michael/Documents/CSC493/racecar_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/michael/Documents/CSC493/racecar_ws/build/CMakeFiles /home/michael/Documents/CSC493/racecar_ws/build/razor_imu_9dof/CMakeFiles/progress.marks
-	cd /home/michael/Documents/CSC493/racecar_ws/build && $(MAKE) -f CMakeFiles/Makefile2 razor_imu_9dof/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/michael/Documents/CSC493/racecar_ws/build/CMakeFiles 0
+	cd /home/model3/racecar_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/model3/racecar_ws/build/CMakeFiles /home/model3/racecar_ws/build/razor_imu_9dof/CMakeFiles/progress.marks
+	cd /home/model3/racecar_ws/build && $(MAKE) -f CMakeFiles/Makefile2 razor_imu_9dof/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/model3/racecar_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/michael/Documents/CSC493/racecar_ws/build && $(MAKE) -f CMakeFiles/Makefile2 razor_imu_9dof/clean
+	cd /home/model3/racecar_ws/build && $(MAKE) -f CMakeFiles/Makefile2 razor_imu_9dof/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/michael/Documents/CSC493/racecar_ws/build && $(MAKE) -f CMakeFiles/Makefile2 razor_imu_9dof/preinstall
+	cd /home/model3/racecar_ws/build && $(MAKE) -f CMakeFiles/Makefile2 razor_imu_9dof/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/michael/Documents/CSC493/racecar_ws/build && $(MAKE) -f CMakeFiles/Makefile2 razor_imu_9dof/preinstall
+	cd /home/model3/racecar_ws/build && $(MAKE) -f CMakeFiles/Makefile2 razor_imu_9dof/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/michael/Documents/CSC493/racecar_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/model3/racecar_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg.dir/rule:
-	cd /home/michael/Documents/CSC493/racecar_ws/build && $(MAKE) -f CMakeFiles/Makefile2 razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg.dir/rule
+	cd /home/model3/racecar_ws/build && $(MAKE) -f CMakeFiles/Makefile2 razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg.dir/rule
 .PHONY : razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ razor_imu_9dof_gencfg: razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg.dir/rule
 
 # fast build rule for target.
 razor_imu_9dof_gencfg/fast:
-	cd /home/michael/Documents/CSC493/racecar_ws/build && $(MAKE) -f razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg.dir/build.make razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg.dir/build
+	cd /home/model3/racecar_ws/build && $(MAKE) -f razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg.dir/build.make razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg.dir/build
 .PHONY : razor_imu_9dof_gencfg/fast
 
 # Help Target
@@ -207,6 +207,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/michael/Documents/CSC493/racecar_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/model3/racecar_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,4 +1,4 @@
-prefix=/home/michael/Documents/CSC493/racecar_ws/install
+prefix=/home/model3/racecar_ws/install
 
 Name: vesc_msgs
 Description: Description of vesc_msgs

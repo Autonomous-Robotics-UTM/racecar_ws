@@ -53,79 +53,47 @@ class ImageSaver:
 		# ts = message_filters.ApproximateTimeSynchronizer([self.image_stream, self.pid_stream,self.control_stream], 1, 1)
 		# ts.registerCallback(self.syncCallBackPid)
 
-		self.file = open("labels.txt","w")
+		# define where data is going
+		self.pre_path = os.getenv("HOME") + "/image_data/"
+		self.path = self.pre_path + "/images/"
+		self.depth_path = self.pre_path + "/d_images/"
+
+		self.file_path = self.pre_path + "labels.txt"
+		self.file = open(self.file_path,"a")
 
 		self.depth = False
 		if len(sys.argv) > 1 and sys.argv[1] == "depth:=true":
 			self.depth = True
-
 		
-
-
+		print("Ready!")
 
 	def syncCallBack(self, image_msg, joy_msg, depth_msg):
 		global counter
 		global saved_timestamp
 		global frame
-		#print(counter)
 		try:
 			cv_image = self.bridge.imgmsg_to_cv2(image_msg, "bgr8")
-
-			# process depth data from stream
-			# todo: figure out why depth information looks weird
-			
 			cv_depth = self.bridge.imgmsg_to_cv2(depth_msg, "32FC1")
-			#cv_depth = np.array(depth_msg)
-			#print("")
-			#print(cv_depth)
-			#print("")
-			#print("arguments:", sys.argv)
 
-			path = os.getenv("HOME") + "/images/"
-			depth_path = os.getenv("HOME") + "/d_images/"
-
+			path = self.path
+			depth_path = self.depth_path
+			#print(counter)
 			if counter > 0 and joy_msg.buttons[5]:
-
-				print("collecting data..")
-				
 				current_timestamp = str(image_msg.header.stamp.secs) + str(image_msg.header.stamp.nsecs) 
 				if(saved_timestamp != current_timestamp):
 					save_image(path, current_timestamp, cv_image)
-					
+					self.file.write(current_timestamp+" "+str(joy_msg.axes[3])+"\n")
 					# save depth images if specified
 					if self.depth:
-						print("saving depth information")
-						# cv_min = np.min(cv_depth)
-						cv_min = 200
-						# cv_max = np.max(cv_depth)
-						cv_max = 10000
-						#cv_depth = ((cv_depth - cv_min)/(cv_max - cv_min))*255
-						#cv_depth[cv_depth==float("-inf")] = 0
-						#cv_depth = cv_depth*255/6000
-						#cv_depth = cv_depth.astype(np.uint16)
 						cv_image_array = np.array(cv_depth, dtype = np.dtype('f8'))
 						cv_image_norm = cv2.normalize(cv_image_array, cv_image_array, 0, 1, cv2.NORM_MINMAX)
 						cv_image_norm *= 255
-						#maximum = float(np.max(cv_depth))
-						#cv_depth = 255-(cv_depth/maximum)*255
-						#print(maximum)
-						print(np.unique(cv_image_norm))
-						#print(type(cv_depth[0][0]))
-						#print(cv_depth)	
-						#print(depth_msg)
 						save_image(depth_path, current_timestamp, cv_image_norm)
-
-					self.file.write(current_timestamp+" "+str(joy_msg.axes[3])+"\n")
-					saved_timestamp = current_timestamp
-					frame = 0
-				else:
-					frame += 1
-					save_image(path, current_timestamp+" ({})".format(frame), cv_image)
-					self.file.write(current_timestamp+" "+str(joy_msg.axes[3])+"\n")
 				counter-=1
+
 			if counter == 0 or counter % 200 == 0:
 				self.file.close()
-				self.file = open("labels.txt","a")
+				self.file = open(self.file_path,"a")
 					
 		except CvBridgeError as e:
 			print(e)

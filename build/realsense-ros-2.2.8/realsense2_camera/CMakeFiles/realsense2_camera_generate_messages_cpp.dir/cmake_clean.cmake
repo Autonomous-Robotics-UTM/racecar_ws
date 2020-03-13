@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/realsense2_camera_generate_messages_cpp"
-  "/home/michael/Documents/CSC493/racecar_ws/devel/include/realsense2_camera/IMUInfo.h"
-  "/home/michael/Documents/CSC493/racecar_ws/devel/include/realsense2_camera/Extrinsics.h"
+  "/home/model3/racecar_ws/devel/include/realsense2_camera/IMUInfo.h"
+  "/home/model3/racecar_ws/devel/include/realsense2_camera/Extrinsics.h"
 )
 
 # Per-language clean rules from dependency scanning.

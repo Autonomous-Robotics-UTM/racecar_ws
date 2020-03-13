@@ -43,44 +43,44 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/michael/Documents/CSC493/racecar_ws/src
+CMAKE_SOURCE_DIR = /home/model3/racecar_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/michael/Documents/CSC493/racecar_ws/build
+CMAKE_BINARY_DIR = /home/model3/racecar_ws/build
 
 # Utility rule file for razor_imu_9dof_gencfg.
 
 # Include the progress variables for this target.
 include razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg.dir/progress.make
 
-razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg: /home/michael/Documents/CSC493/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h
-razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg: /home/michael/Documents/CSC493/racecar_ws/devel/lib/python2.7/dist-packages/razor_imu_9dof/cfg/imuConfig.py
+razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg: /home/model3/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h
+razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg: /home/model3/racecar_ws/devel/lib/python2.7/dist-packages/razor_imu_9dof/cfg/imuConfig.py
 
 
-/home/michael/Documents/CSC493/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h: /home/michael/Documents/CSC493/racecar_ws/src/razor_imu_9dof/cfg/imu.cfg
-/home/michael/Documents/CSC493/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.py.template
-/home/michael/Documents/CSC493/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/michael/Documents/CSC493/racecar_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/imu.cfg: /home/michael/Documents/CSC493/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h /home/michael/Documents/CSC493/racecar_ws/devel/lib/python2.7/dist-packages/razor_imu_9dof/cfg/imuConfig.py"
-	cd /home/michael/Documents/CSC493/racecar_ws/build/razor_imu_9dof && ../catkin_generated/env_cached.sh /home/michael/Documents/CSC493/racecar_ws/build/razor_imu_9dof/setup_custom_pythonpath.sh /home/michael/Documents/CSC493/racecar_ws/src/razor_imu_9dof/cfg/imu.cfg /opt/ros/melodic/share/dynamic_reconfigure/cmake/.. /home/michael/Documents/CSC493/racecar_ws/devel/share/razor_imu_9dof /home/michael/Documents/CSC493/racecar_ws/devel/include/razor_imu_9dof /home/michael/Documents/CSC493/racecar_ws/devel/lib/python2.7/dist-packages/razor_imu_9dof
+/home/model3/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h: /home/model3/racecar_ws/src/razor_imu_9dof/cfg/imu.cfg
+/home/model3/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.py.template
+/home/model3/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h: /opt/ros/melodic/share/dynamic_reconfigure/templates/ConfigType.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/model3/racecar_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating dynamic reconfigure files from cfg/imu.cfg: /home/model3/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h /home/model3/racecar_ws/devel/lib/python2.7/dist-packages/razor_imu_9dof/cfg/imuConfig.py"
+	cd /home/model3/racecar_ws/build/razor_imu_9dof && ../catkin_generated/env_cached.sh /home/model3/racecar_ws/build/razor_imu_9dof/setup_custom_pythonpath.sh /home/model3/racecar_ws/src/razor_imu_9dof/cfg/imu.cfg /opt/ros/melodic/share/dynamic_reconfigure/cmake/.. /home/model3/racecar_ws/devel/share/razor_imu_9dof /home/model3/racecar_ws/devel/include/razor_imu_9dof /home/model3/racecar_ws/devel/lib/python2.7/dist-packages/razor_imu_9dof
 
-/home/michael/Documents/CSC493/racecar_ws/devel/share/razor_imu_9dof/docs/imuConfig.dox: /home/michael/Documents/CSC493/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/michael/Documents/CSC493/racecar_ws/devel/share/razor_imu_9dof/docs/imuConfig.dox
+/home/model3/racecar_ws/devel/share/razor_imu_9dof/docs/imuConfig.dox: /home/model3/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/model3/racecar_ws/devel/share/razor_imu_9dof/docs/imuConfig.dox
 
-/home/michael/Documents/CSC493/racecar_ws/devel/share/razor_imu_9dof/docs/imuConfig-usage.dox: /home/michael/Documents/CSC493/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/michael/Documents/CSC493/racecar_ws/devel/share/razor_imu_9dof/docs/imuConfig-usage.dox
+/home/model3/racecar_ws/devel/share/razor_imu_9dof/docs/imuConfig-usage.dox: /home/model3/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/model3/racecar_ws/devel/share/razor_imu_9dof/docs/imuConfig-usage.dox
 
-/home/michael/Documents/CSC493/racecar_ws/devel/lib/python2.7/dist-packages/razor_imu_9dof/cfg/imuConfig.py: /home/michael/Documents/CSC493/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/michael/Documents/CSC493/racecar_ws/devel/lib/python2.7/dist-packages/razor_imu_9dof/cfg/imuConfig.py
+/home/model3/racecar_ws/devel/lib/python2.7/dist-packages/razor_imu_9dof/cfg/imuConfig.py: /home/model3/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/model3/racecar_ws/devel/lib/python2.7/dist-packages/razor_imu_9dof/cfg/imuConfig.py
 
-/home/michael/Documents/CSC493/racecar_ws/devel/share/razor_imu_9dof/docs/imuConfig.wikidoc: /home/michael/Documents/CSC493/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h
-	@$(CMAKE_COMMAND) -E touch_nocreate /home/michael/Documents/CSC493/racecar_ws/devel/share/razor_imu_9dof/docs/imuConfig.wikidoc
+/home/model3/racecar_ws/devel/share/razor_imu_9dof/docs/imuConfig.wikidoc: /home/model3/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h
+	@$(CMAKE_COMMAND) -E touch_nocreate /home/model3/racecar_ws/devel/share/razor_imu_9dof/docs/imuConfig.wikidoc
 
 razor_imu_9dof_gencfg: razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg
-razor_imu_9dof_gencfg: /home/michael/Documents/CSC493/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h
-razor_imu_9dof_gencfg: /home/michael/Documents/CSC493/racecar_ws/devel/share/razor_imu_9dof/docs/imuConfig.dox
-razor_imu_9dof_gencfg: /home/michael/Documents/CSC493/racecar_ws/devel/share/razor_imu_9dof/docs/imuConfig-usage.dox
-razor_imu_9dof_gencfg: /home/michael/Documents/CSC493/racecar_ws/devel/lib/python2.7/dist-packages/razor_imu_9dof/cfg/imuConfig.py
-razor_imu_9dof_gencfg: /home/michael/Documents/CSC493/racecar_ws/devel/share/razor_imu_9dof/docs/imuConfig.wikidoc
+razor_imu_9dof_gencfg: /home/model3/racecar_ws/devel/include/razor_imu_9dof/imuConfig.h
+razor_imu_9dof_gencfg: /home/model3/racecar_ws/devel/share/razor_imu_9dof/docs/imuConfig.dox
+razor_imu_9dof_gencfg: /home/model3/racecar_ws/devel/share/razor_imu_9dof/docs/imuConfig-usage.dox
+razor_imu_9dof_gencfg: /home/model3/racecar_ws/devel/lib/python2.7/dist-packages/razor_imu_9dof/cfg/imuConfig.py
+razor_imu_9dof_gencfg: /home/model3/racecar_ws/devel/share/razor_imu_9dof/docs/imuConfig.wikidoc
 razor_imu_9dof_gencfg: razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg.dir/build.make
 
 .PHONY : razor_imu_9dof_gencfg
@@ -91,10 +91,10 @@ razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg.dir/build: razor_imu_9dof_gencfg
 .PHONY : razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg.dir/build
 
 razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg.dir/clean:
-	cd /home/michael/Documents/CSC493/racecar_ws/build/razor_imu_9dof && $(CMAKE_COMMAND) -P CMakeFiles/razor_imu_9dof_gencfg.dir/cmake_clean.cmake
+	cd /home/model3/racecar_ws/build/razor_imu_9dof && $(CMAKE_COMMAND) -P CMakeFiles/razor_imu_9dof_gencfg.dir/cmake_clean.cmake
 .PHONY : razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg.dir/clean
 
 razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg.dir/depend:
-	cd /home/michael/Documents/CSC493/racecar_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/michael/Documents/CSC493/racecar_ws/src /home/michael/Documents/CSC493/racecar_ws/src/razor_imu_9dof /home/michael/Documents/CSC493/racecar_ws/build /home/michael/Documents/CSC493/racecar_ws/build/razor_imu_9dof /home/michael/Documents/CSC493/racecar_ws/build/razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/model3/racecar_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/model3/racecar_ws/src /home/model3/racecar_ws/src/razor_imu_9dof /home/model3/racecar_ws/build /home/model3/racecar_ws/build/razor_imu_9dof /home/model3/racecar_ws/build/razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : razor_imu_9dof/CMakeFiles/razor_imu_9dof_gencfg.dir/depend
 

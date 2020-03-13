@@ -7,4 +7,5 @@
 # new environment variables
 
 # modified environment variables
-export PWD="/home/michael/Documents/CSC493/racecar_ws/build"
+export PWD="/home/model3/racecar_ws/build"
+export ROS_PACKAGE_PATH="/home/michael/Documents/CSC493/racecar_ws/src:$ROS_PACKAGE_PATH"

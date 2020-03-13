@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"vesc_driver\"
 
-CXX_INCLUDES = -I/home/michael/Documents/CSC493/racecar_ws/src/vesc/vesc_driver/include -I/home/michael/Documents/CSC493/racecar_ws/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
+CXX_INCLUDES = -I/home/model3/racecar_ws/src/vesc/vesc_driver/include -I/home/model3/racecar_ws/devel/include -I/opt/ros/melodic/include -I/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 
